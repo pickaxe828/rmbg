@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RMBG⚡</title>
+
+  <link rel="icon" type="image/svg+xml" href="/src-tauri/icons/rmbg_icon.svg" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="/src/styles.css">
+  <link rel="stylesheet" href="/src/var.css">
+
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <script defer type="module" src="/src/main.ts"></script>
+  <script defer>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  </script>
+</head>
+
+<body>
+  <div class="vh-100 d-flex justify-content-center">
+    <div class="app d-flex flex-column">
+      <div class="item input-group input-field flex-row">
+        <input type="text" class="form-control from-path" placeholder="Photo import folder path...">
+        <span type="text" class="input-group-text input-field-emoji">➡️</span>
+        <input type="text" class="form-control to-path" placeholder="Photo export folder path...">
+      </div>
+      <div class="item input-group options-field flex-row">
+        <div class="input-group">
+          <div class="input-group-text">
+            <input class="form-check-input alpha-mat-check mt-0" type="checkbox">
+          </div>
+          <span class="input-group-text">Alpha matting</span>
+          <input type="text" class="form-control alpha-mat-input" disabled>
+        </div>
+      </div>
+      <div class="item submit-field">
+        <button type="btn" class="btn btn-primary submit-btn"> Remove Background⚡ </button>
+      </div>
+      <div class="item progress-field progress" data-bs-toggle="popover" ata-bs-content="An">
+        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated"></div>
+      </div>
+      <div class="item card-text-field card outcome-field">
+        <div class="card-body">
+          <h5 class="card-text">
+            -
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
