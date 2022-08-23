@@ -1,1 +1,2 @@
-rembg==2.0.23
+pyinstaller==5.3
+rembg[gpu]==2.0.23
