@@ -1,5 +1,5 @@
-##  RMBG
-A GUI background remover with a simple interface and make use of REMBG, a Python background removal library.
+##  RMBG⚡
+A GUI background remover with a simple interface and make use of [REMBG](https://github.com/danielgatis/rembg), a Python background removal library.
 
 ## Requirements
 * Python 3.9.x
